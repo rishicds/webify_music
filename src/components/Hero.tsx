@@ -66,7 +66,7 @@ import {
     return (
         <div className="flex items-center">
           <img src="logo.png" alt="Logo" />
-          <h1 className="text-8xl ml-4">Hello</h1>
+          <h1 className="text-8xl text-red-500  font-bold  ml-4">Musix</h1>
         </div>
       );
   };
