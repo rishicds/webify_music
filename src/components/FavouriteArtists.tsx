@@ -208,16 +208,16 @@ const artists: Artist[] = [
     bio: "Bruno Mars is an American singer, songwriter, record producer, musician, and dancer. He is known for his stage performances, retro showmanship, and for performing in a wide range of musical styles, including pop, R&B, funk, soul, reggae, hip hop, and rock. Mars is accompanied by his band, The Hooligans, who play a variety of instruments, such as electric guitar, bass, piano, keyboards, drums, and horns, and also serve as backup singers and dancers."
   },
   {
-    name: "Billie Eilish",
+    name: "Olivia Rodrigo",
     genre: "Pop / Alternative",
-    src: "/api/placeholder/400/400",
+    src: "https://charts-static.billboard.com/img/2020/01/olivia-rodrigo-3wl-artist-chart-9ct-344x344.jpg",
     color: "bg-indigo-300",
     bio: "Billie Eilish is an American singer and songwriter. She first gained attention in 2015 when she uploaded the song 'Ocean Eyes' to SoundCloud, which was subsequently released by the Interscope Records subsidiary Darkroom. The song was written and produced by her brother Finneas O'Connell, with whom she collaborates on music and live shows. Her debut EP, Don't Smile at Me (2017), became a sleeper hit, reaching the top 15 in the US, UK, Canada, and Australia."
   },
   {
-    name: "The Weeknd",
+    name: "Michael Jackson",
     genre: "R&B / Pop",
-    src: "/api/placeholder/400/400",
+    src: "https://charts-static.billboard.com/img/1971/10/michael-jackson-9to-344x344.jpg",
     color: "bg-orange-300",
     bio: "The Weeknd is the stage name of Canadian singer, songwriter, and record producer Abel Makkonen Tesfaye. He is known for his sonic versatility and dark lyricism, his music exploring escapism, romance, and melancholia, and is inspired by personal experiences. He began his recording career in 2010, anonymously uploading several songs to YouTube."
   }
