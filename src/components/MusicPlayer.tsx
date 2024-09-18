@@ -10,16 +10,10 @@ const MusicPlayer = () => {
       imageUrl: 'song1.png', // Add image URL here
     },
     {
-      title: 'Song 2',
-      artist: 'Artist 2',
-      url: '/songs/song2.mp3',
-      imageUrl: '/images/song2.jpg', // Add image URL here
-    },
-    {
-      title: 'Song 3',
-      artist: 'Artist 3',
-      url: '/songs/song3.mp3',
-      imageUrl: '/images/song3.jpg', // Add image URL here
+      title: 'Attention',
+      artist: 'Charlie Puth',
+      url: 'songs/song2.ogg',
+      imageUrl: 'song2.png', // Add image URL here
     },
   ];
 

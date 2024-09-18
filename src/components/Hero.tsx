@@ -73,10 +73,10 @@ import {
   
   const Links = () => {
     return (
-      <nav className="flex gap-3 text-sm">
-        <a href="#">Music</a>
-        <a href="#">Artists</a>
-        <a href="#">Signup</a>
+      <nav className="flex gap-6 text-sm">
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
       </nav>
     );
   };

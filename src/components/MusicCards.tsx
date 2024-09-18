@@ -183,9 +183,9 @@ const cards: Card[] = [
     color: "bg-yellow-300",
   },
   {
-    description: "Babbu Maan",
-    title: "Mitran Di Chhatri",
-    src: "https://assets.aceternity.com/demos/babbu-maan.jpeg",
+    description: "Marshmello",
+    title: "Alone",
+    src: "https://charts-static.billboard.com/img/2016/10/marshmello-fo3-artistchart-8il-344x344.jpg",
     ctaText: "Play Album",
     ctaLink: "#",
     content: () => (
@@ -209,14 +209,14 @@ const cards: Card[] = [
     color: "bg-red-300",
   },
   {
-    description: "Himesh Reshammiya",
-    title: "Aap Ka Suroor",
-    src: "https://assets.aceternity.com/demos/aap-ka-suroor.jpeg",
+    description: "Twenty One Pilots",
+    title: "Stressed Out",
+    src: "https://charts-static.billboard.com/img/2015/04/twenty-one-pilots-uug-artistchart-vgm-344x344.jpg",
     ctaText: "Explore More",
     ctaLink: "#",
     content: () => (
       <p>
-        "Aap Ka Suroor" is the title track from Himesh Reshammiya's debut studio album, released in 2006. This song catapulted Reshammiya to stardom, showcasing his unique nasal twang and catchy compositions. The track's fusion of Western and Indian musical elements, coupled with its romantic lyrics, made it a chart-topping hit and a defining moment in modern Bollywood music.
+        "Stressed Out" is the title track from Twenty One Pilot's studio album, released in 2006. This song catapulted Reshammiya to stardom, showcasing his unique nasal twang and catchy compositions. The track's fusion of Western and Indian musical elements, coupled with its romantic lyrics, made it a chart-topping hit and a defining moment in modern Bollywood music.
       </p>
     ),
     color: "bg-purple-300",
