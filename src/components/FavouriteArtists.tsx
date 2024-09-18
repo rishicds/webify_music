@@ -165,62 +165,62 @@ export function NeubrutalistFavouriteArtists() {
 }
 
 const artists: Artist[] = [
-  {
-    name: "Sabrina",
-    genre: "Pop / R&B",
-    src: "https://charts-static.billboard.com/img/2014/08/sabrina-carpenter-3b3-artistchart-6e0-344x344.jpg",
-    color: "bg-yellow-300",
-    bio: "Beyoncé is an American singer, songwriter, record producer, and actress. Born and raised in Houston, Texas, she performed in various singing and dancing competitions as a child and rose to fame in the late 1990s as lead singer of R&B girl-group Destiny's Child. She is one of the world's best-selling recording artists, having sold over 160 million records worldwide."
-  },
-  {
-    name: "Taylor Swift",
-    genre: "Pop / Folk",
-    src: "https://charts-static.billboard.com/img/2006/12/taylor-swift-9sy-artistchart-ko8-344x344.jpg",
-    color: "bg-blue-300",
-    bio: "Ed Sheeran is an English singer-songwriter. He has sold more than 150 million records worldwide, making him one of the world's best-selling music artists. He has 84.5 million RIAA-certified units in the US, and two of his albums are in the list of the best-selling albums in UK chart history."
-  },
-  {
-    name: "Post Malone",
-    genre: "Pop / Country",
-    src: "https://charts-static.billboard.com/img/2015/10/post-malone-uhe-artistchart-d5b-344x344.jpg",
-    color: "bg-red-300",
-    bio: "Taylor Swift is an American singer-songwriter. Her narrative songwriting, which often centers around her personal life, has received widespread critical praise and media coverage. Swift has sold over 50 million albums and 150 million singles worldwide."
-  },
-  {
-    name: "Billie Eilish",
-    genre: "Hip-Hop / R&B",
-    src: "https://charts-static.billboard.com/img/2017/05/billie-eilish-lrt-artist-chart-1ek-344x344.jpg",
-    color: "bg-purple-300",
-    bio: "Drake is a Canadian rapper, singer, songwriter, actor, and entrepreneur. A prominent figure in popular music, Drake is credited for popularizing the Toronto sound. He first gained recognition as an actor on the teen drama television series Degrassi: The Next Generation; intent on pursuing a career in music, he left the series after releasing his debut mixtape Room for Improvement."
-  },
-  {
-    name: "Linkin Park",
-    genre: "Soul / Pop",
-    src: "https://charts-static.billboard.com/img/2007/12/linkin-park-ohp-artistchart-ufc-344x344.jpg",
-    color: "bg-green-300",
-    bio: "Adele is an English singer-songwriter. After graduating from the BRIT School in 2006, Adele signed a record deal with XL Recordings. Her debut album, 19, was released in 2008 and spawned the UK top-five singles 'Chasing Pavements' and 'Make You Feel My Love'. The album has been certified 8× platinum in the UK and triple platinum in the US."
-  },
-  {
-    name: "Ed Sheeran",
-    genre: "Pop / R&B / Funk",
-    src: "https://charts-static.billboard.com/img/2012/11/ed-sheeran-w3r-artist-chart-1li-344x344.jpg",
-    color: "bg-pink-300",
-    bio: "Bruno Mars is an American singer, songwriter, record producer, musician, and dancer. He is known for his stage performances, retro showmanship, and for performing in a wide range of musical styles, including pop, R&B, funk, soul, reggae, hip hop, and rock. Mars is accompanied by his band, The Hooligans, who play a variety of instruments, such as electric guitar, bass, piano, keyboards, drums, and horns, and also serve as backup singers and dancers."
-  },
-  {
-    name: "Olivia Rodrigo",
-    genre: "Pop / Alternative",
-    src: "https://charts-static.billboard.com/img/2020/01/olivia-rodrigo-3wl-artist-chart-9ct-344x344.jpg",
-    color: "bg-indigo-300",
-    bio: "Billie Eilish is an American singer and songwriter. She first gained attention in 2015 when she uploaded the song 'Ocean Eyes' to SoundCloud, which was subsequently released by the Interscope Records subsidiary Darkroom. The song was written and produced by her brother Finneas O'Connell, with whom she collaborates on music and live shows. Her debut EP, Don't Smile at Me (2017), became a sleeper hit, reaching the top 15 in the US, UK, Canada, and Australia."
-  },
-  {
-    name: "Michael Jackson",
-    genre: "R&B / Pop",
-    src: "https://charts-static.billboard.com/img/1971/10/michael-jackson-9to-344x344.jpg",
-    color: "bg-orange-300",
-    bio: "The Weeknd is the stage name of Canadian singer, songwriter, and record producer Abel Makkonen Tesfaye. He is known for his sonic versatility and dark lyricism, his music exploring escapism, romance, and melancholia, and is inspired by personal experiences. He began his recording career in 2010, anonymously uploading several songs to YouTube."
-  }
-];
+    {
+      name: "Sabrina",
+      genre: "Pop / R&B",
+      src: "https://charts-static.billboard.com/img/2014/08/sabrina-carpenter-3b3-artistchart-6e0-344x344.jpg",
+      color: "bg-yellow-300",
+      bio: "Sabrina Carpenter is an American singer and actress. She gained recognition with her role on Disney Channel's 'Girl Meets World' and later transitioned into music, with popular songs in the pop and R&B genres."
+    },
+    {
+      name: "Taylor Swift",
+      genre: "Pop / Folk",
+      src: "https://charts-static.billboard.com/img/2006/12/taylor-swift-9sy-artistchart-ko8-344x344.jpg",
+      color: "bg-blue-300",
+      bio: "Taylor Swift is an American singer-songwriter known for her narrative songwriting and versatility. She has won numerous awards and is one of the best-selling music artists of all time."
+    },
+    {
+      name: "Post Malone",
+      genre: "Pop / Country",
+      src: "https://charts-static.billboard.com/img/2015/10/post-malone-uhe-artistchart-d5b-344x344.jpg",
+      color: "bg-red-300",
+      bio: "Post Malone is an American rapper, singer, and songwriter. He is known for his blend of hip-hop, pop, and country influences, and has achieved significant commercial success with hits like 'Circles' and 'Rockstar.'"
+    },
+    {
+      name: "Billie Eilish",
+      genre: "Hip-Hop / R&B",
+      src: "https://charts-static.billboard.com/img/2017/05/billie-eilish-lrt-artist-chart-1ek-344x344.jpg",
+      color: "bg-purple-300",
+      bio: "Billie Eilish is an American singer-songwriter who gained fame with her debut single 'Ocean Eyes.' Known for her distinctive style and vocal delivery, Eilish has become a major figure in contemporary pop music."
+    },
+    {
+      name: "Linkin Park",
+      genre: "Soul / Pop",
+      src: "https://charts-static.billboard.com/img/2007/12/linkin-park-ohp-artistchart-ufc-344x344.jpg",
+      color: "bg-green-300",
+      bio: "Linkin Park is an American rock band known for their nu-metal sound. They achieved international success with albums like 'Hybrid Theory' and 'Meteora,' blending rock, hip-hop, and electronic elements."
+    },
+    {
+      name: "Ed Sheeran",
+      genre: "Pop / R&B / Funk",
+      src: "https://charts-static.billboard.com/img/2012/11/ed-sheeran-w3r-artist-chart-1li-344x344.jpg",
+      color: "bg-pink-300",
+      bio: "Ed Sheeran is an English singer-songwriter known for his heartfelt lyrics and acoustic style. His albums, such as 'Divide' and 'Plus,' have made him one of the best-selling music artists worldwide."
+    },
+    {
+      name: "Olivia Rodrigo",
+      genre: "Pop / Alternative",
+      src: "https://charts-static.billboard.com/img/2020/01/olivia-rodrigo-3wl-artist-chart-9ct-344x344.jpg",
+      color: "bg-indigo-300",
+      bio: "Olivia Rodrigo is an American singer-songwriter and actress. She gained fame with her debut single 'drivers license' and has since become known for her emotive and relatable music in the pop and alternative genres."
+    },
+    {
+      name: "Michael Jackson",
+      genre: "R&B / Pop",
+      src: "https://charts-static.billboard.com/img/1971/10/michael-jackson-9to-344x344.jpg",
+      color: "bg-orange-300",
+      bio: "Michael Jackson, known as the 'King of Pop,' was an American singer, songwriter, and dancer. His contributions to music, dance, and fashion, along with his publicized personal life, made him a global figure in popular culture."
+    }
+  ];  
 
 export default NeubrutalistFavouriteArtists;
