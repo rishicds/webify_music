@@ -27,7 +27,7 @@ import {
     return (
       <section
         ref={targetRef}
-        className="h-[500vh] bg-neutral-50 text-neutral-950"
+        className="h-[300vh] bg-neutral-50 text-neutral-950"
       >
         <div className="sticky top-0 flex h-screen flex-col justify-between overflow-hidden">
           <Nav />
@@ -66,7 +66,7 @@ import {
     return (
         <div className="flex items-center">
           <img src="logo.png" alt="Logo" />
-          <h1 className="text-7xl text-red-500  font-bold  ml-4">MUSIX</h1>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-red-500 font-bold ml-4">MUSIX</h1>
         </div>
       );
   };
