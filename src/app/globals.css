@@ -34,3 +34,57 @@ body {
     text-wrap: balance;
   }
 }
+/* Add this to your globals.css file */
+
+.neobrutalist-copilot .copilotKitButton {
+  background-color: #FFD700 !important;
+  color: #000000 !important;
+  border: 4px solid #000000 !important;
+  box-shadow: 4px 4px 0px 0px #000000 !important;
+  transition: all 0.1s ease-in-out !important;
+  font-weight: bold !important;
+  text-transform: uppercase !important;
+  border-radius: 0 !important;
+  padding: 32px 32px !important;  /* Increase padding for larger size */
+  font-size: 18px !important;     /* Increase font size */
+}
+
+.neobrutalist-copilot .copilotKitButton:hover {
+  transform: translate(2px, 2px) !important;
+  box-shadow: 2px 2px 0px 0px #000000 !important;
+}
+
+.neobrutalist-copilot .copilotKitWindow {
+  border: 4px solid #000000 !important;
+  box-shadow: 8px 8px 0px 0px #000000 !important;
+  border-radius: 0 !important;
+}
+
+.neobrutalist-copilot .copilotKitHeader {
+  background-color: #FFD700 !important;
+  color: #000000 !important;
+  font-weight: bold !important;
+  text-transform: uppercase !important;
+  border-radius: 0 !important;
+}
+
+.neobrutalist-copilot .copilotKitMessages {
+  background-color: #FFFFFF !important;
+}
+
+.neobrutalist-copilot .copilotKitInputWrapper {
+  border-top: 4px solid #000000 !important;
+}
+
+.neobrutalist-copilot .copilotKitInput {
+  border: 2px solid #000000 !important;
+  border-radius: 0 !important;
+}
+
+.neobrutalist-copilot .copilotKitSendButton {
+  background-color: #FFD700 !important;
+  color: #000000 !important;
+  border: 2px solid #000000 !important;
+  font-weight: bold !important;
+  border-radius: 0 !important;
+}

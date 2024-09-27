@@ -22,9 +22,9 @@ const LogoutButton = ({ user }: { user: any }) => {
   return (
     <button
       onClick={handleLogout}
-      className="fixed top-4 left-4 z-50 bg-red-500 text-white p-2 rounded-full hover:bg-red-600 transition duration-200"
+      className="fixed top-10 right-4 z-20 bg-red-400 text-black font-bold text- px-4 py-3 border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] transition-all"
     >
-      Logout
+      LOGOUT
     </button>
   );
 };

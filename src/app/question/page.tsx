@@ -1,39 +1,25 @@
 "use client"
-import Image from "next/image";
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { FiMusic, FiHeart, FiX } from "react-icons/fi";
-import { CopilotChat } from "@copilotkit/react-ui";
-import "@copilotkit/react-ui/styles.css";
+import { FiMusic, FiHeart } from "react-icons/fi";
 import { useRouter } from 'next/navigation';
-
-interface Genre {
-  name: string;
-  color: string;
-}
-
-interface Artist {
-  name: string;
-  genre: string;
-  src: string;
-}
-
-interface Song {
-  title: string;
-  artist: string;
-  genre: string;
-}
-
-const genres: Genre[] = [
+const genres = [
   { name: "Pop", color: "bg-pink-300" },
   { name: "Rock", color: "bg-red-300" },
   { name: "Hip-Hop", color: "bg-purple-300" },
   { name: "Electronic", color: "bg-blue-300" },
   { name: "Country", color: "bg-yellow-300" },
   { name: "R&B", color: "bg-green-300" },
+  { name: "Jazz", color: "bg-indigo-300" },
+  { name: "Classical", color: "bg-gray-300" },
+  { name: "Romance", color: "bg-red-400" },
+  { name: "English", color: "bg-teal-300" },
+  { name: "Hindi", color: "bg-orange-300" },
+  { name: "Bengali", color: "bg-lime-300" },
 ];
 
-const artists: Artist[] = [
+const artists = [
   {
     name: "Taylor Swift",
     genre: "Pop",
@@ -42,7 +28,7 @@ const artists: Artist[] = [
   {
     name: "Imagine Dragons",
     genre: "Rock",
-    src: "https://charts-static.billboard.com/img/2012/08/imagine-dragons-nxo-344x344.jpg",
+    src: "https://www.billboard.com/wp-content/uploads/media/06-Imagine-Dragons-2017-cr-Eliot-Lee-Hazel-1548.jpg?w=1024",
   },
   {
     name: "Drake",
@@ -52,16 +38,60 @@ const artists: Artist[] = [
   {
     name: "Calvin Harris",
     genre: "Electronic",
-    src: "https://charts-static.billboard.com/img/2007/03/calvin-harris-s8s-344x344.jpg",
+    src: "https://www.billboard.com/wp-content/uploads/media/calvin-harris-blue-2017-billboard-1548.jpg?w=1024",
   },
+  {
+    name: "Shania Twain",
+    genre: "Country",
+    src: "https://celebmafia.com/wp-content/uploads/2018/05/shania-twain-performs-on-nbc-s-today-show-concert-series-in-nyc-8.jpg",
+  },
+  {
+    name: "Adele",
+    genre: "R&B",
+    src: "https://www.billboard.com/wp-content/uploads/2021/11/03-adele-press-2021-cr-simon-emmett-billboard-1548.jpg?w=1024",
+  },
+  {
+    name: "Ludwig van Beethoven",
+    genre: "Classical",
+    src: "https://upload.wikimedia.org/wikipedia/commons/6/6f/Beethoven.jpg",
+  },
+  {
+    name: "A.R. Rahman",
+    genre: "Hindi",
+    src: "https://thepersonage.com/wp-content/uploads/2020/07/A-R-Rahman-Images.jpg",
+  },
+  {
+    name: "Arijit Singh",
+    genre: "Hindi",
+    src: "https://th.bing.com/th/id/OIP.MCTw58Mb_IfovrknvdlCaQHaHa?w=900&h=900&rs=1&pid=ImgDetMain",
+  },
+  {
+    name: "Shreya Ghoshal",
+    genre: "Hindi",
+    src: "https://rollingstoneindia.com/wp-content/uploads/2020/08/Shreya-Ghoshal-960x852.jpg",
+  },
+  {
+    name: "Anupam Roy",
+    genre: "Bengali",
+    src: "https://assets.telegraphindia.com/telegraph/2021/Sep/1631127453_anupam-roy.jpg",
+  },
+  {
+    name: "Rupam Islam",
+    genre: "Bengali",
+    src: "https://im.whatshot.in/img/2018/Jun/rupam-islam-cropped1-1528884433.jpg?wm=1&w=1200&h=630&cc=1",
+  },
+  {
+    name: "Kishore Kumar",
+    genre: "Hindi",
+    src: "https://images.assettype.com/freepressjournal%2Fimport%2F2018%2F08%2FKishore-Kumar-picture.jpg?w=1200&auto=format%2Ccompress&ogImage=true",
+  },
+  {
+    name: "Coldplay",
+    genre: "Pop",
+    src: "https://whatson.ae/wp-content/uploads/2022/02/coldplay-fb.jpg",
+  }
 ];
 
-const songs: Song[] = [
-  { title: "Shake It Off", artist: "Taylor Swift", genre: "Pop" },
-  { title: "Radioactive", artist: "Imagine Dragons", genre: "Rock" },
-  { title: "God's Plan", artist: "Drake", genre: "Hip-Hop" },
-  { title: "This Is What You Came For", artist: "Calvin Harris", genre: "Electronic" },
-];
 
 export default function MusixOnboarding() {
   const [selectedGenres, setSelectedGenres] = useState<string[]>([]);
@@ -81,12 +111,8 @@ export default function MusixOnboarding() {
     );
   };
 
-  const recommendedSongs = songs.filter(song =>
-    selectedGenres.includes(song.genre) || selectedArtists.includes(song.artist)
-  );
-
   const handleFinish = () => {
-    if (selectedGenres.length > 0 || selectedArtists.length > 0) {
+    if (selectedGenres.length > 0 && selectedArtists.length > 0) {
       setShowPopup(true);
     }
   };
@@ -96,7 +122,7 @@ export default function MusixOnboarding() {
       const timer = setTimeout(() => {
         router.push('/');
       }, 3000);
-      return () => clearTimeout(timer);
+      return () => clearTimeout(timer); // Clear timeout on unmount
     }
   }, [showPopup, router]);
 
@@ -104,6 +130,7 @@ export default function MusixOnboarding() {
     <div className="min-h-screen bg-orange-200 p-8 relative">
       <h1 className="text-6xl font-extrabold text-black mb-12">Welcome to Musix</h1>
       
+      {/* Genre Section */}
       <section className="mb-12">
         <h2 className="text-4xl font-bold text-black mb-6">Select Your Favorite Genres</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
@@ -123,6 +150,7 @@ export default function MusixOnboarding() {
         </div>
       </section>
 
+      {/* Artist Section */}
       <section className="mb-12">
         <h2 className="text-4xl font-bold text-black mb-6">Choose Your Favorite Artists</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
@@ -160,39 +188,23 @@ export default function MusixOnboarding() {
         </div>
       </section>
 
-      {recommendedSongs.length > 0 && (
-        <section className="mb-12">
-          <h2 className="text-4xl font-bold text-black mb-6">Recommended Songs</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {recommendedSongs.map((song) => (
-              <motion.div
-                key={song.title}
-                className="bg-yellow-300 border-4 border-black shadow-[4px_4px_0_0_#000] rounded-xl p-4"
-                whileHover={{ y: -5 }}
-              >
-                <h3 className="text-2xl font-bold mb-2">{song.title}</h3>
-                <p className="text-lg">{song.artist}</p>
-                <p className="text-md text-gray-700">{song.genre}</p>
-              </motion.div>
-            ))}
-          </div>
-        </section>
+      {/* Finish Setup Button */}
+      {selectedGenres.length > 0 && selectedArtists.length > 0 && (
+        <motion.button
+          onClick={handleFinish}
+          className="fixed bottom-4 left-1/2 transform -translate-x-1/2 bg-red-400 text-white text-2xl font-bold py-4 px-8 border-4 border-white shadow-[4px_4px_0_0_#fff] rounded-xl"
+          whileHover={{ y: -5 }}
+          whileTap={{ y: 0 }}
+        >
+          Finish Setup
+        </motion.button>
       )}
 
-<motion.button
-  onClick={handleFinish}
-  className="fixed bottom-4 left-1/2 transform -translate-x-1/2 bg-red-400 text-white text-2xl font-bold py-4 px-8 border-4 border-white shadow-[4px_4px_0_0_#fff] rounded-xl"
-  whileHover={{ y: -5 }}
-  whileTap={{ y: 0 }}
->
-        Finish Setup
-      </motion.button>
-
-      
-
+      {/* Popup Animation */}
       <AnimatePresence>
         {showPopup && (
           <motion.div
+            key="popup"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.8 }}

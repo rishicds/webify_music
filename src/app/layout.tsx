@@ -2,10 +2,9 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Footer from "@/components/Common/Footer";
-import { Header } from "@/components/Common/Header";
 import { CopilotKit } from "@copilotkit/react-core";
-import { CopilotPopup, CopilotSidebar } from "@copilotkit/react-ui";
-import "@copilotkit/react-ui/styles.css"; // Required for CopilotKit components
+import { CopilotPopup } from "@copilotkit/react-ui";
+import "@copilotkit/react-ui/styles.css"; 
 
 // Custom fonts
 const geistSans = localFont({
@@ -27,25 +26,32 @@ export const metadata: Metadata = {
 };
 
 // Root layout with CopilotKit
+const neobrutalistStyles = {
+  "--copilot-kit-primary-color": "#FFD700",
+  "--copilot-kit-secondary-color": "#000000",
+  "--copilot-kit-background-color": "#FFFFFF",
+  "--copilot-kit-border-radius": "0px",
+  "--copilot-kit-font-family": "'Geist Sans', sans-serif",
+} as React.CSSProperties;
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const publicApiKey = process.env.NEXT_PUBLIC_COPILOT_KEY; // Ensure the environment variable is set
+  const publicApiKey = process.env.NEXT_PUBLIC_COPILOT_KEY;
 
   return (
     <CopilotKit publicApiKey={publicApiKey}>
       <html lang="en">
-        <body>
+        <body className={`${geistSans.variable} ${geistMono.variable}`}>
           {children}
-          {/* Chatbot popup with custom neobrutalistic styles */}
           <CopilotPopup
-            className="copilot-popup"
             labels={{
               title: "Musix Assistant",
               initial: "Hello! How can I assist you with your music?",
             }}
+            className="neobrutalist-copilot z-100"
           />
           <Footer />
         </body>
